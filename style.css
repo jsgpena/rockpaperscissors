@@ -1,10 +1,10 @@
 
-  
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: Oswald;
+	font-size: 62.5%;
 }
 
 body {
@@ -12,31 +12,32 @@ body {
 }
 
 header {
-	padding: 20px;
+	padding: 2rem;
 }
 
 header > h1 {
 	color: #EDF5E1;
 	text-align: center;
-	font-size: 50px;
+	font-size: 3rem;
 	text-shadow: 2px 2px 4px #555555;
 }
 
 .scoreboard {
 	margin: 20px auto;
 	border: 3px solid #05386B;
-	width: 500px;
 	text-align: center;
 	color: #05386B;
-	font-size: 40px;
-	padding: 15px 20px;
+	max-width: 70%;
+	height: auto;
+	font-size: 4rem;
+	padding: 1rem 1.5rem;
 	position: relative;
 }
 
 .badge {
 	background: #379683;
 	color: #EDF5E1;
-	font-size: 20px;
+	font-size: 1rem;
 }
 
 #user-label {
@@ -53,7 +54,7 @@ header > h1 {
 
 .result{
 	color: #EDF5E1;
-	font-size: 30px;
+	font-size: 4rem;
 	text-align: center;
 	text-shadow: 1px 1px 2px #555555;
 }
@@ -67,49 +68,62 @@ header > h1 {
 	background: #EDF5E1;
 	box-shadow: 2px 2px 4px #555555;
 	border-radius: 50%;
-	padding: 15px;
-	margin: 30px;
+	padding: 1rem;
+	margin: 1rem;
 }
 
 .choice > img{
-	width: 45px;
+	width: 4rem;
 }
 
 .boxes{
 	text-align:center;
+	font-size: 3rem;
 }
 
 .box{
 	display: inline-block;
 	background: #EDF5E1;
-	padding: 30px;
-	margin: 20px;
+	padding: 3rem;
+	margin: 2rem;
+	width: 30%;
+	border-radius: 5%;
 }
 
 .box > img{
-	width: 90px;
+	width: 5rem;
 }
 
 #action-message{
 	text-align: center;
-	font-size: 30px;
+	font-size: 3rem;
 	color: #05386B;
-	margin: 20px;
+	margin: 2rem;
 	text-shadow: 1px 1px 2px #555555;
 }
 
 .greenglow{
 	background: #3dEE6d;
-	box-shadow: 0 0 10px #31b43A;
+	box-shadow: 0 0 1rem #31b43A;
 }
 
 .redglow{
 	background: #fc121b;
-	box-shadow: 0 0 10px #d01115
+	box-shadow: 0 0 1rem #d01115
 }
 
 .grayglow{
 	background: #464647;
-	box-shadow: 0 0 10px #25292b;
+	box-shadow: 0 0 1rem #25292b;
 }
 
+@media only screen and (min-width: 800px) {
+	.scoreboard{
+		max-width: 30%;
+		height: auto;
+		font-size: 6rem;
+	}
+	.box{
+		max-width: 10%;
+	}
+} 
