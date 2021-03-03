@@ -45,16 +45,22 @@ function win(user, comp){
 	userScore++;
 	userScore_span.innerHTML = userScore;
 	result_div.innerHTML = convertToWord(user) + " beats " + convertToWord(comp) + ", you win!"
+	document.getElementById(user).classList.add('greenglow');
+	setTimeout(function(){document.getElementById(user).classList.remove('greenglow')}, 300)
 }
 
 function lose(user, comp){
 	computerScore++;
 	computerScore_span.innerHTML = computerScore;
 	result_div.innerHTML = convertToWord(user) + " loses to " + convertToWord(comp) + ", you lose."
+	document.getElementById(user).classList.add('redglow');
+	setTimeout(function(){document.getElementById(user).classList.remove('redglow')}, 300)	
 }
 
 function draw(user, comp){
 	result_div.innerHTML = convertToWord(user) + " is the same as " + convertToWord(comp) + ", draw."
+	document.getElementById(user).classList.add('grayglow');
+	setTimeout(function(){document.getElementById(user).classList.remove('grayglow')}, 300)
 }
 
 function main(){

@@ -72,3 +72,18 @@ header > h1 {
 	color: #05386B;
 	margin: 20px;
 }
+
+.greenglow{
+	background: #3dEE6d;
+	box-shadow: 0 0 10px #31b43A;
+}
+
+.redglow{
+	background: #fc121b;
+	box-shadow: 0 0 10px #d01115
+}
+
+.grayglow{
+	background: #464647;
+	box-shadow: 0 0 10px #25292b;
+}
