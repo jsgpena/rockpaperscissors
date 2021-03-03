@@ -7,6 +7,8 @@ const result_div = document.querySelector(".result");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
+const userBox_div = document.getElementById("userbox");
+const compBox_div = document.getElementById("compbox");
 
 function getComputerChoice(){
 	const choices = ['r','p','s'];
@@ -16,6 +18,10 @@ function getComputerChoice(){
 
 function game(userChoice) {
 	const computerChoice = getComputerChoice();
+	const word1 = convertToWord(userChoice).toLowerCase();
+	const word2 = convertToWord(computerChoice).toLowerCase();
+	compBox_div.src = word2 + ".png"
+	userBox_div.src = word1 + ".png"
 	switch(userChoice + computerChoice){
 		case "rs":
 		case "pr":
